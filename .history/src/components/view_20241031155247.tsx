@@ -12,7 +12,7 @@ export default async function View({ id }: { id: string }) {
 
   // after(
 
-  writeClient
+  await writeClient
     .patch(id)
     .set({ views: totalViews + 1 })
     .commit();

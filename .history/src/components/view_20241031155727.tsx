@@ -6,7 +6,7 @@ import { formatViews } from "@/lib/utils";
 import { writeClient } from "@/sanity/lib/write-client";
 // import { unstable_after as after } from "next/server";
 export default async function View({ id }: { id: string }) {
-  const { views: totalViews } = await client
+  const { views: totalViews } = client
     .withConfig({ useCdn: false })
     .fetch(STARTUP_VIEWS_QUERY, { id });
 

@@ -9,7 +9,7 @@ import React, { Suspense } from "react";
 import markdownit from "markdown-it";
 import { Skeleton } from "@/components/ui/skeleton";
 import View from "@/components/view";
-// export const experimental_ppr = true;
+export const experimental_ppr = true;
 export default async function Page({
   params,
 }: {

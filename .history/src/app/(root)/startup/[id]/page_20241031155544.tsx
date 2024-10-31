@@ -76,9 +76,7 @@ export default async function Page({
         {/*  TODO: recommended startups*/}
       </section>
 
-      <Suspense fallback={<Skeleton className="view_skeleton" />}>
-        <View id={id}></View>
-      </Suspense>
+      <View id={id}></View>
     </>
   );
 }
