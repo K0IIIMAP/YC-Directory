@@ -6,11 +6,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**", // This allows all hostnames
+        hostname: "avatars.githubusercontent.com", // Specify the exact hostname
         port: "", // No specific port needed
         pathname: "/**", // This allows all paths
       },
-      // You can add more specific patterns here if needed
+      // You can add more patterns here if needed
     ],
   },
   eslint: {

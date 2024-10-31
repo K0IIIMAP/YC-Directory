@@ -1,3 +1,4 @@
+import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -6,11 +7,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**", // This allows all hostnames
-        port: "", // No specific port needed
-        pathname: "/**", // This allows all paths
+        hostname: "*",
       },
-      // You can add more specific patterns here if needed
     ],
   },
   eslint: {
@@ -29,5 +27,3 @@ const nextConfig: NextConfig = {
     buildActivityPosition: "bottom-right",
   },
 };
-
-export default nextConfig;
